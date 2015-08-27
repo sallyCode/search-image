@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	#test
+	{
+		display:block;
+		position: absolute;
+		top:0;
+	}
+  </style>
+ </head>
+ <body>
+  <table border="1" bordercolor="#eaeaea" width="800px" bgcolor="" cellspacing="0" cellpadding="10px" frame="hsides">
+  <tr>
+	<td>lks       jdfsdklfsd;fksdlkf<br>
+	sfddsf<br>
+	sdf<br>
+	sf<br><br>
+	sdf<br>
+	sdf<br>
+	sdfm dsifkdlsfmnk</td>
+	<td align="top">sdfds</td>
+	<td>
+		<div id="test">
+			slkfslkf
+		<div>
+	</td>
+  </tr>
+  <tr>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  </table>
+  <script type="text/javascript">
+  <!--
+	var top = document.getElementById('test').top;
+	alert(top);
+  -->
+  </script>
+ </body>
+</html>

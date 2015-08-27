@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <style type="text/css">
+
+.search_form{margin:0 auto;width:30em;height:3em; display:block;}
+
+.search_form:hover{-webkit-box-shadow:0 0 1em #900;-moz-box-shadow:0 0 1em #900;} 
+
+.sinput{float:left; width:20em; height:3em;} 
+
+.sbtn{float:left; width:5em; height:3em; margin-left:-1px;background-color:#4d90fe;cursor:pointer; color:#f3f7fc;} 
+
+.sbtn:hover{background-color:#4084f2}
+</style>
+
+</head>
+
+
+
+
+<body>
+
+<div class="search_form">
+
+<form class="search_form" action="#" method="get">     <input type="text" name="s" class="sinput" placeholder="输入 回车搜索" autofocus x-webkit-speech>      <input type="submit" value="搜索" class="sbtn"> </form> 
+
+</div>
+
+</body>
+<!--
+  详解：
+
+输入框input中多了三个属性，分别是placeholder，autofocus，x-webkit-speech，它们有着不同的作用。
+
+placeholder：是为了设置初始值，并且这个初始值的颜色为灰色，当输入框input的内容变动时，这个值就消失。
+
+autofocus：自动聚焦，当进入当前页面时，这个搜索输入框会自动获取焦点，而你可以在打开页面后直接输入关键字按回车键进行搜索。当autofocus出现两次以上的时候，浏览器会选择最后一个带有autofocus属性的输入框input聚焦。
+
+x-webkit-speech：webkit核的浏览器（如Chrome）特有的语音识别工具，使用x-webkit-speech后，在输入框的右侧会出现一个小话筒，点击话筒，会提示“请开始说话”，用户可以通过麦克风输入语音，浏览器会自动识别语音内容，并将识别的结果显示在输入框中。
+
+
+
+
+以前需要借助一大段Javascript代码来实现的聚焦和输入光标移开输入框的交互效果，而使用HTML5则只需要设置几个属性一切就OK了。
+
+
+-->
+
+
+ </body>
+</html>

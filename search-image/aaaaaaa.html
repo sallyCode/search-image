@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <title>css美化搜索框</title>
+<style type="text/css">
+.searchinput{
+border-right-width: 0px;
+padding-left: 3px;
+width: 168px;
+font-family: arial;
+float: left;
+border-top-width: 0px;
+border-bottom-width: 0px;
+color: #636365;
+margin-left: 4px;
+font-size: 8pt;
+vertical-align: middle;
+border-left-width: 0px;
+margin-right: 3px;
+height:30px;
+
+}
+.tab_search{
+border-bottom: #cccccc 1px solid;
+border-left: #cccccc 1px solid;
+height: 25px;
+border-top: #cccccc 1px solid;
+border-right: #cccccc 1px solid;
+-webkit-box-shadow:0 0 1em #999;-moz-box-shadow:0 0 1em #999;
+}
+.tab_search:hover{
+-webkit-box-shadow:0 0 1em #900;-moz-box-shadow:0 0 1em #900;
+}
+.searchaction{
+width: 40px;
+float: left;
+height: 40px;
+margin-left:-1em;
+}
+.searchaction:hover{
+}
+.SearchFrom{
+margin-top:12px;
+top:12px;
+margin:0 auto;
+width:208px;
+display:block;
+}
+</style>
+<br/><br/><br/><br/><br/><br/><br/>
+<div class ="SearchFrom">
+<form action="file:///C:/Users/acer/Desktop/Noname1.html" name="search" >
+<table border="0" cellpadding="0" cellspacing="0" class="tab_search">
+<tr>
+<td>
+<input type="text" name="q" class="searchinput" id="searchinput" onkeydown="if (event.keyCode==13) {}" onblur="if(this.value=='')value='- Search Products -';" onfocus="if(this.value=='- Search Products -')value='';" value="- Search Products -"/>
+</td>
+<td>
+<input type="image" class="searchaction" onclick="if(document.forms['search'].searchinput.value=='- Search Products -')document.forms['search'].searchinput.value='';" onmouseover="this.src='7.gif'" alt="Search" title="Search" onmouseout="this.src='6.gif'" border="0" hspace="2" src="6.gif"/>
+</td>
+</tr>
+</table>
+</form>
+</div>
+ </body>
+</html>

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <title>css美化搜索框</title>
+<style type="text/css">
+.searchinput{
+border-right-width: 0px;
+padding-left: 3px;
+width: 168px;
+font-family: arial;
+float: left;
+border-top-width: 0px;
+border-bottom-width: 0px;
+color: #636365;
+margin-left: 4px;
+font-size: 8pt;
+vertical-align: middle;
+border-left-width: 0px;
+margin-right: 3px;
+height:30px;
+
+}
+.tab_search{
+border-bottom: #cccccc 1px solid;
+border-left: #cccccc 1px solid;
+height: 25px;
+border-top: #cccccc 1px solid;
+border-right: #cccccc 1px solid;
+-webkit-box-shadow:0 0 1em #999;-moz-box-shadow:0 0 1em #999;
+}
+.tab_search:hover{
+-webkit-box-shadow:0 0 1em #900;-moz-box-shadow:0 0 1em #900;
+}
+.searchaction{
+width: 40px;
+float: left;
+height: 40px;
+margin-left:-1em;
+}
+.searchaction:hover{
+src:C:/Users/acer/Desktop/Search-hover.png
+}
+.SearchFrom{
+margin-top:12px;
+top:12px;
+margin:0 auto;
+width:208px;
+display:block;
+}
+</style>
+<br/><br/><br/><br/><br/><br/><br/>
+<div class ="SearchFrom">
+<form action="file:///C:/Users/acer/Desktop/Noname1.html" name="search" >
+<table border="0" cellpadding="0" cellspacing="0" class="tab_search">
+<tr>
+<td>
+<input type="text" name="q" class="searchinput" id="searchinput" onkeydown="if (event.keyCode==13) {}" onblur="if(this.value=='')value='- Search Products -';" onfocus="if(this.value=='- Search Products -')value='';" value="- Search Products -"/>
+</td>
+<td>
+<input type="image" class="searchaction" onclick="if(document.forms['search'].searchinput.value=='- Search Products -')document.forms['search'].searchinput.value='';" onmouseover="this.src='C:/Users/acer/Desktop/Search-hover.png'" alt="Search" title="Search" onmouseout="this.src='C:/Users/acer/Desktop/Search.png'" border="0" hspace="2"/>
+</td>
+</tr>
+</table>
+</form>
+</div>
+<div style="text-align:center;margin:30px 0 0 0;"><hr style="color:#999;height:1px;">如不能显示效果，请按Ctrl+F5刷新本页，更多网页代码：<a href='http://www.veryhuo.com/' target='_blank'>http://www.veryhuo.com/</a></div>
+文章源自：烈火网，原文：http://www.veryhuo.com/a/view/44020.html
+
+<script language="javascript" type="text/javascript">
+function glb_searchTextOnfocus(obj) {
+	if (obj.value == '请输入您想要的作品...')
+		obj.value = '';
+	obj.style.color = '#333';
+}
+function glb_searchTextOnBlur(obj) {
+	if (obj.value == '') {
+		obj.value = '请输入您想要的作品...';
+		obj.style.color = '#98BC00';
+	} else {
+		obj.style.color = '#333';
+	}
+}
+</script>
+
+<style>
+*{ margin:0; padding:0;}
+body{ background:url(images/body_bg.png) repeat-y center 0px; min-width:970px;}
+body,p,div,th,td,input,select,textarea,ul,li,a{ color:#333; font-size:12px;font-family:"宋体",Arial,Verdana; padding:0; margin:0;}
+.searchbox{width:483px; height:58px; margin-left:448px; padding-top:14px;position:relative; z-index:99;}
+.searchbox .l{ padding-left:36px; background:url(images/v5_main_img.png) no-repeat 0 -57px; height:58px;}
+.searchbox .m{ background:url(images/v5_repeat_x.png) repeat-x 0 -123px; height:58px; }
+.searchbox .m .searchkey{ outline:none; border:0; padding:16px 0; height:22px; line-height:22px; background:none; font-size:19px; font-weight:bold; color:#98bc00; width:290px; float:left;font-family: "microsoft yahei";}
+.searchbox .m .searchcleanbut{background:url(images/filter_del.gif) no-repeat 0 20px; cursor:pointer; border:0; width:20px; height:58px; float:left;}
+.searchbox .m .searchbut{background:url(images/v5_main_img.png) no-repeat 0 -115px; cursor:pointer; border:0; width:154px; height:58px; float:right;}
+.searchbox .m .searchbutfocus{ background-position:-154px -115px;}
+.searchbox{width:653px;}
+.searchbox .m .searchkey{border:0; padding:18px 0; height:22px; line-height:22px; background:none; font-size:19px; font-weight:bold; color:#98BC00; width:460px; float:left;}
+</style>
+
+
+<form action = "file:///C:/Users/acer/Desktop/Noname1.html">
+<input type="reset"/>
+    <input type="text" value="aaaaa"/>
+	<input type="image" alt="Search" src="aaaa"/>
+	<input type="submit"/>
+	<input type="button"/>
+	<input type="email"/>
+	
+</form>
+ </body>
+</html>

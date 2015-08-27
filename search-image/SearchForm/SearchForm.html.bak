@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Author" content="Qiur">
+  <meta name="Keywords" content="搜索,Search,搜索框,百度">
+  <meta name="Description" content="精简的百度搜索首页">
+  <title>SearchForm</title>
+ </head>
+ <body onload="document.getElementById('SearchText').focus();">
+
+
+  <!--   SearchForm Begin   -->
+<style type="text/css">
+.SearchForm{
+    width:38em;
+    margin:18em auto 0 auto;
+    display:block;
+}
+.SearchTable{
+    border: #cccccc 0.2em solid;
+    -webkit-box-shadow:0 0 1em;
+	-moz-box-shadow:0 0 1em;
+    -ms-box-shadow:0 0 1em;
+	-o-box-shadow:0 0 1em;
+    box-shadow:0 0 1em;
+}
+.SearchTable:hover{
+    -webkit-box-shadow:0 0 1em #990;
+	-moz-box-shadow:0 0 1em #990;
+    -ms-box-shadow:0 0 1em #990;
+	-o-box-shadow:0 0 1em #990;
+    box-shadow:0 0 1em #990;
+}
+.SearchText{
+    border-width: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 35em;
+	height:2.5em;
+    float: left;
+    color: #636363;
+    vertical-align: middle;
+}
+.SearchAction{
+    float: left;
+	width: 3em;
+    height: 3em;
+	vertical-align: middle;
+}
+.SearchAction:hover{
+}
+</style>
+
+<form action="http://www.baidu.com/s" name="SearchForm" class="SearchForm">
+  <table border="0" cellpadding="0" cellspacing="0" class="SearchTable">
+    <tr>
+      <td>
+	    <input type="hidden" name="ie" value="utf-8">
+        <input type="hidden" name="f" value="8">
+        <input type="hidden" name="rsv_bp" value="1">
+        <input type="text" name="wd" class="SearchText" id="SearchText" onkeydown="if (event.keyCode==13) {}" onblur="if(this.value=='')value='- Search -';" onfocus="if(this.value=='- Search -')value='';" value="- Search -" maxlength="100" autofocus/>
+      </td>
+      <td>
+        <input type="image" class="SearchAction" onclick="return Check();" onmouseover="this.src='5.gif'" alt="Search" title="Search" onmouseout="this.src='4.gif'" src='4.gif'/>
+      </td>
+    </tr>
+  </table>
+</form>
+
+
+<script type="text/javascript">
+<!--
+function Check()
+{
+	word = document.forms["SearchForm"].SearchText;
+	if(word.value=="" || word.value=="- Search -")
+	{
+		word.focus();
+		return false;
+	}
+	else return true;
+}
+//	function SearchKeyword()
+//	{
+//		if(document.forms["SearchForm"].SearchText.value=="- Search -")
+//		{
+//			;
+//		}
+//		else if(document.forms["SearchForm"].SearchText.value=="")
+//		{
+//			;
+//		}
+//		else
+//		{
+//			window.open("http://www.baidu.com/s?ie=utf-8&wd=" + document.forms["SearchForm"].SearchText.value,"_self");
+//		}
+//	}
+
+<!--
+<div id="searchui">
+<form method="get" id="searchform" action="http://www.google.com.hk/search">
+<p><label for="searched_content">Search:</label></p>
+<p><input type="hidden" name="sitesearch" value="www.baidu.com"></p>
+<p>
+<input type="text" name="as_q" class="box" id="searched_content" title="在此输入搜索内容。">
+<input type="submit" value="Go" class="button" title="搜索！">
+</p>
+</form>
+</div>
+-->
+
+
+</script>
+<!--   SearchForm End   -->
+
+ </body>
+</html>
